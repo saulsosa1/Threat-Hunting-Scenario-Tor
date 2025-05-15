@@ -63,7 +63,7 @@ DeviceProcessEvents
 // TOR Browser or service is being used and is actively creating network connections
 DeviceNetworkEvents
 | where InitiatingProcessFileName in~ ("tor.exe", "firefox.exe")
-| where RemotePort in (9001, 9030, 9040, 9050, 9051, 9150)
+| where RemotePort in (9001, 9030, 9040, 9050, 9051, 9150, 80, 443)
 | project Timestamp, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, RemoteIP, RemotePort, RemoteUrl
 | order by Timestamp desc
 
