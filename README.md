@@ -120,8 +120,8 @@ DeviceNetworkEvents
 
 ### 4. Network Connection - TOR Network
 
-- **Timestamp:** `2024-11-08T22:18:01.1246358Z`
-- **Event:** A network connection to IP `176.198.159.33` on port `9001` by user "employee" was established using `tor.exe`, confirming TOR browser network activity.
+- **Timestamp:** `2025-05-06T22:55:15.5353294Z`
+- **Event:** A network connection to IP `107.189.8.181` on port `443` by user "svillan" was established using `tor.exe`, confirming TOR browser network activity.
 - **Action:** Connection success.
 - **Process:** `tor.exe`
 - **File Path:** `C:\Users\svillan\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
