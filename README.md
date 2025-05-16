@@ -83,7 +83,7 @@ Searched for any indication the TOR browser was used to establish a connection u
 
 ```kql
 DeviceNetworkEvents  
-| where DeviceName == "threat-hunt-lab"  
+| where DeviceName == "saul-mde"  
 | where InitiatingProcessAccountName != "system"  
 | where InitiatingProcessFileName in ("tor.exe", "firefox.exe")  
 | where RemotePort in ("9001", "9030", "9040", "9050", "9051", "9150", "80", "443")  
