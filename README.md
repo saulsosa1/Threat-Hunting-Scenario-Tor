@@ -154,3 +154,21 @@ The user "svillan" on the "saul-mde" device initiated and completed the installa
 TOR usage was confirmed on the endpoint `saul-mde` by the user `svillan`. The device was isolated, and the user's direct manager was notified.
 
 ---
+
+## Conclusion and Recommendations
+
+To prevent recurrence of unauthorized Tor usage and strengthen the organization's security posture, the following recommendations are proposed for management’s consideration:
+
+- **Network Controls:** Configure firewalls to block known Tor ports (`9001`, `9030`, `9040`, `9050`, `9051`, `9150`) to prevent connections to Tor entry nodes. This reduces the risk of employees bypassing network security controls.
+
+- **EDR Enhancements:** Implement Microsoft Defender for Endpoint rules to alert on Tor-related file and process activity (e.g., `tor.exe`, `firefox.exe` with Tor-specific command lines). This enables proactive detection of unauthorized software.
+
+- **Data Loss Prevention (DLP):** Deploy DLP policies to monitor and block the creation or transfer of files with suspicious names (e.g., containing “tor” or “shopping-list”). This mitigates risks associated with sensitive data documentation.
+
+- **User Awareness Training:** Conduct training to educate employees on the organization's acceptable use policy, emphasizing the risks of unauthorized software like Tor Browser, which could lead to data breaches or compliance violations.
+
+- **Follow-Up Investigation:** Perform a forensic analysis of the `saul-mde` device to examine the contents of `tor-shopping-list.txt` and check for additional indicators of compromise, such as lateral movement or data exfiltration attempts. This could involve analyzing browser history or temporary files created by Tor.
+
+- **Potential Escalations:** Depending on management’s review of the incident, consider escalating to HR for policy violation enforcement or to legal teams if the contents of `tor-shopping-list.txt` suggest illicit activities (e.g., accessing dark web marketplaces).
+
+---
