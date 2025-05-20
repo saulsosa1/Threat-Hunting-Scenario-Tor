@@ -153,6 +153,8 @@ The user "svillan" on the "saul-mde" device initiated and completed the installa
 
 TOR usage was confirmed on the endpoint `saul-mde` by the user `svillan`. The device was isolated, and the user's direct manager was notified.
 
+- [Incident Report Email](https://github.com/saulsosa1/Threat-Hunting-Scenario-Tor/blob/main/incident-report-email.md)
+
 ---
 
 ## Conclusion and Recommendations
